@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/media_queries.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Hacer nuevo post</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="post.html">Post</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blogs-main">
+    <section class="blogs-news-container">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-8 col-md-offset-2">
+
+            <h1>Crear nueva publicación</h1>
+
+            <form action="/create-post" method="post">
+
+              <div class="form-group">
+                <label for="summary">¿Qué estas pensando?</label>
+                <textarea class="form-control" id="summary" name="summary" placeholder="Máximo n caracteres"></textarea>
+              </div>
+              <div class="form-group" style="display: flex; justify-content: space-between;">
+                <div style="flex: 1; margin-right: 100px;">
+                  <label for="images">Agregar Imágenes</label>
+                  <input type="file" class="form-control" id="images" name="images" multiple>
+                </div>
+                <div style="flex: 1;">
+                  <label for="video">Agregar Videos</label>
+                  <input type="file" class="form-control" id="video" name "video">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category" name="category">
+                  <option value="" disabled selected>Elige una opción</option>
+                  <option value="1">Ilustración</option>
+                  <option value="2">Fotografía</option>
+                  <option value="3">Diseño</option>
+                  <option value="4">Pintura</option>
+
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="tags">Tags</label>
+                <input type="text" class="form-control" id="tags" name="tags" placeholder="Separated by comma">
+              </div>
+              <div class="form-group">
+                <label for="private" class="private-label">Publicación Privada</label>
+                <input type="checkbox" class="form-control" id="private" name="private">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-secondary">Cancel</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+</body>
+
+  <footer>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </footer>
+</html>

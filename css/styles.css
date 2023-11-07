@@ -155,7 +155,6 @@ blogs-main {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para los botones de "Like" y "Comentar */
 .like-button, .comment-button {
     background-color: #000000;
     color: #fff;
@@ -192,9 +191,129 @@ blogs-main {
     clear: both;
 }
 
+.form-control {
+  width: 100%;
+  border-radius: 5px;
+}
+
+button.post {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  
+}
+
+textarea,
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+  button {
+    width: 100%;
+    margin-top: 20px;
+  }
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+grid-container blogs-main-new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: 60px 1fr;
+
+}
+
+
+.private-label {
+  margin-left: px; /* Espacio entre el texto y el checkbox */
+}
+/* Estilos para el botón "Submit" */
+.btn-primary {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el cursor por encima */
+}
+
+/* Estilos para el botón "Cancel" */
+.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #999; /* Cambia el color al pasar el cursor por encima */
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
+
+
+.btn-color{
+  background-color: #0e1c36;
+  color: #fff;
+  
+}
+
+.profile-image-pic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+
+
+.cardbody-color{
+  background-color: #ffffff;
+}
+
+a{
+  text-decoration: none;}
+
